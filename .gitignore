@@ -1,0 +1,6 @@
+node_modules/
+data/
+.env
+ba.txt
+.DS_Store
+Log*.txt
