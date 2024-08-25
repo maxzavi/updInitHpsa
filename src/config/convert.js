@@ -4,10 +4,10 @@ const { map } = require("./map")
 const convert = (row, tags)=>{
     if(!row) return
     const item = JSON.parse(JSON.stringify(ItemPIM))
-    item.ItemDescription=getValueByTag(row,tags,"<Name>")
-    item.ItemCategory[0].ItemCatalog="HPSA"
-    item.ItemCategory[0].CategoryCode="HPSA_LIN_"+getValueByTag(row,tags,"Línea Promart").substring(0,5)
-    sku =getValueByTag(row,tags,"Sku")
+    //item.ItemDescription=getValueByTag(row,tags,"<Name>")
+    //item.ItemCategory[0].ItemCatalog="HPSA"
+    //item.ItemCategory[0].CategoryCode="HPSA_LIN_"+getValueByTag(row,tags,"Línea Promart").substring(0,5)
+    sku =getValueByTag(row,tags,"SKU.")
     item.ItemNumber=getValueByTag(row,tags,"Item Number")    
 
     map.forEach(mapRow=>{
@@ -31,6 +31,12 @@ const convert = (row, tags)=>{
                     valueAttrib=valueAttrib.split(" ")[0] 
                     vattribName="u"+vattribName+ "UE"
                     if(valueAttrib==="0") valueAttrib=""
+                }
+            }
+            //Yes/NOT
+            if(mapRow[7]){
+                if(mapRow[7]==1){
+                    valueAttrib= valueAttrib.substring(0,2)
                 }
             }
 

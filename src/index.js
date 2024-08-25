@@ -10,8 +10,15 @@ const main = async()=>{
     const fileLogErr=process.env.FILE_LOGS+ "LogErr.txt"
     const fileSkuOk= process.env.FILE_LOGS+ "LogSkuOk.txt"
     const fileSkuErr=process.env.FILE_LOGS+ "LogSkuErr.txt"
+    const fileJsonErr = process.env.FILE_LOGS + "LogJsonErr.txt"
+        
+    fs.writeFile(fileLogOk, "", err=>{})
+    fs.writeFile(fileLogErr, "", err=>{})
     fs.writeFile(fileSkuOk, "", err=>{})
     fs.writeFile(fileSkuErr, "", err=>{})
+    fs.writeFile(fileJsonErr, "", err=>{})
+
+    
     //Initial value
     let index=process.env.SEQ_INIT
 

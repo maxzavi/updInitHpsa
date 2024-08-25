@@ -32,7 +32,7 @@ const getItemsInput = async ()=>{
     let chunk = [];
     for (let i = 0; i < items.length; i++) {
       chunk.push(items[i]);
-      if ((i + 1) % 40 === 0) {
+      if ((i + 1) % 20 === 0) {
         chunkedArray.push(chunk);
         chunk = [];
       }
