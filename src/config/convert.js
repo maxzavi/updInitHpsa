@@ -62,13 +62,13 @@ const convert = (row, tags)=>{
         }
     })
 
-    //addValue("HpsaAtributosLogisticos","pesoDelMasterpackLogisticaUEUOM", "kg", item)
-    //Default attrib HpsaAtributosDeSurtido clusterDeSurtido
-    //addDefaultAttrib("HpsaAtributosDeSurtido","clusterDeSurtido","Sin Cluster", item)
     let attrGroup = item.ItemEffCategory.find(t => Object.keys(t)[0] === "HpsaAtributosLogisticos")
     if (attrGroup){        
         addValue("HpsaAtributosLogisticos","volumenDelProductoUEUOM", "cm3", item)
         addValue("HpsaAtributosLogisticos","volumenUlTextUEUOM", "cm3", item)
+        addValue("HpsaAtributosLogisticos","pesoDelMasterpackLogisticaUEUOM", "kg", item)
+        addValue("HpsaAtributosLogisticos","volumenDeLaUnidadLogisticaUEUOM", "cm3", item)
+        addValue("HpsaAtributosLogisticos","volumenDelMasterpackLogisticaUEUOM", "cm3", item)
     }
     return {item:item, sku:sku}
 }
