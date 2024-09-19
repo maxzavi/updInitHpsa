@@ -3,19 +3,19 @@ const ItemPIM = {
     "OrganizationCode": "MST",
     "ItemClass": "IC_HPSA",
     "ItemNumber": "",
-    "ItemDescription": "",
+    //"ItemDescription": "",
     //"ApprovalStatusValue":"Approved",
     "ItemStatusValue": "Inactive",
     "LifecyclePhaseValue": "Design",
     "PrimaryUOMValue": "Each",
     "ItemExtensibleFlexfieldCategoryCode": "ICC_HPSA",
     "EngineeredItemFlag": true,
-    "ItemCategory": [
-        {
-            "ItemCatalog": "HPSA",
-            "CategoryCode": ""
-        }
-    ],
+    //"ItemCategory": [
+    //    {
+    //        "ItemCatalog": "HPSA",
+    //        "CategoryCode": ""
+    //    }
+    //],
     "ItemEffCategory": []
 }
 

@@ -1,4 +1,8 @@
 const map =[
+    ["sku","HpsaAtributosComerciales","sku",                                             "","","","","","1"],    
+]
+
+const mapEsp =[
 ["advertenciaDeUso","HpsaAtributosContenido1","Advertencia de uso","","","","",""],
 ["alturaDeZocalo","HpsaAtributosContenido1","Altura de zócalo","","","","",""],
 ["alturaMaximaProducto","HpsaAtributosContenido1","Altura máxima producto","","","","",""],

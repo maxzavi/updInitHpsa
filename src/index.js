@@ -17,11 +17,7 @@ const main = async()=>{
     fs.writeFile(fileSkuOk, "", err=>{})
     fs.writeFile(fileSkuErr, "", err=>{})
     fs.writeFile(fileJsonErr, "", err=>{})
-
     
-    //Initial value
-    let index=process.env.SEQ_INIT
-
     for (let x = 0; x < itemsInput.length; x++) {
         const element = itemsInput[x];
         await Promise.all(element.map(async ({item, sku}) => {

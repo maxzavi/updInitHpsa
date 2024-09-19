@@ -21,6 +21,7 @@ const getItemsInput = async ()=>{
         const items =[] 
         for (let index = 0; index < csvRow.length; index++) {
             const {item,sku} =  convert  (csvRow[index],tags)
+            console.log(item)
             items.push({item:item, sku:sku})
          }
          return items
@@ -32,7 +33,7 @@ const getItemsInput = async ()=>{
     let chunk = [];
     for (let i = 0; i < items.length; i++) {
       chunk.push(items[i]);
-      if ((i + 1) % 20 === 0) {
+      if ((i + 1) % 50 === 0) {
         chunkedArray.push(chunk);
         chunk = [];
       }
