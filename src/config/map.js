@@ -1,6 +1,8 @@
 const map =[
-    ["sku","HpsaAtributosComerciales","sku",                                             "","","","","","1"],    
+    ["sku","HpsaAtributosComerciales","Sku","","","","","","1"],
 ]
+//Column 9  value 1 save blank value
+//["sku","HpsaAtributosComerciales","Sku","","","","","","1"],
 
 const mapEsp =[
 ["advertenciaDeUso","HpsaAtributosContenido1","Advertencia de uso","","","","",""],
