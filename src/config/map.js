@@ -1,10 +1,10 @@
-const map =[
-    ["sku","HpsaAtributosComerciales","Sku","","","","","","1"],
+const mapEx =[
+    ["ingresoEspecial", "HpsaAtributosComerciales2", "Ingreso_Especial", "", "", "", ""],
 ]
 //Column 9  value 1 save blank value
 //["sku","HpsaAtributosComerciales","Sku","","","","","","1"],
 
-const mapEsp =[
+const map =[
 ["advertenciaDeUso","HpsaAtributosContenido1","Advertencia de uso","","","","",""],
 ["alturaDeZocalo","HpsaAtributosContenido1","Altura de zócalo","","","","",""],
 ["alturaMaximaProducto","HpsaAtributosContenido1","Altura máxima producto","","","","",""],
