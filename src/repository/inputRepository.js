@@ -3,7 +3,7 @@ const { convert } = require('../config/convert')
 
 const getItemsInput = async ()=>{
     const filepath= process.env.FILE_PATH
-    const data = fs.readFileSync(filepath,'utf8')
+    const data = fs.readFileSync(filepath,process.env.ENCODE)
     const rows = data.split('\n')
 
     const tags = rows[0].replace("\r","").split(';')
@@ -13,7 +13,7 @@ const getItemsInput = async ()=>{
     const items = await csv({
         noheader:false,
         output: "csv",
-        delimiter: ";"
+        delimiter: process.env.DELIMITER
     })
     .fromString(data)
     .then((csvRow)=>{
